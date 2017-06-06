@@ -11,8 +11,13 @@
 </p>
 
 <p>
-  <strong>Birthday:</strong>
-  <%= @user.birthday %>
+  <strong>Transactions:</strong>
+  <%= @user.transactions %>
+</p>
+
+<p>
+  <strong>Balance:</strong>
+  <%= "$#{@user.balance_in_cents/100.0}" %>
 </p>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |

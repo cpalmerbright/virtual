@@ -27,8 +27,13 @@
   </div>
 
   <div class="field">
-    <%= form.label :birthday %>
-    <%= form.date_select :birthday, id: :user_birthday %>
+    <%= form.label :transactions %>
+    <%= form.text_field :transactions %>
+  </div>
+
+  <div class="field">
+    <%= form.label :balance_in_dollars %>
+    <%= form.text_field :balance_in_dollars %>
   </div>
 
   <div class="actions">
